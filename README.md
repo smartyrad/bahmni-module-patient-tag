@@ -1,0 +1,1 @@
+# bahmni-module-patient-tag
