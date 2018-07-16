@@ -1,0 +1,222 @@
+//TOP FIXED HEADER
+@import "_variables.scss";
+@import "_mixin.scss";
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-wrap {
+  background: $bahmniSecondaryColor;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  padding: 0 10px;
+  height: 52px;
+}
+
+.header, .breadcrumb-inner, .container-content {
+  @include clearfix();
+  max-width: $max-page-width;
+  margin: 0 auto;
+}
+
+.section-grid {
+  margin: 0 0 15px;
+  font-size: 14px;
+  position: relative;
+  @include box-shadow-for-section;
+  border: 1px solid $bahmniSecondaryColor;
+  border-radius: 5px 5px 0 0;
+  background: $white;
+  .section-content {
+    padding: 10px 0;
+  }
+}
+
+h2.header-title {
+  background: $bahmniSecondaryColor;
+  color: $gray200;
+  font-size: 16px;
+  padding: 10px;
+  margin: 0;
+  border-radius: 3px 3px 0 0;
+}
+
+.nav {
+  float: left;
+  width: auto;
+  ul {
+    li {
+      padding: 0 20px 0 0;
+      display: inline-block;
+      a {
+        color: $white;
+        font-weight: 400;
+      }
+      &:hover {
+        opacity: 0.75;
+      }
+      &.active {
+        opacity: 0.75;
+        font-family: $primaryBoldFont san-serif;
+      }
+    }
+  }
+}
+
+.button, button, input[type="button"], input[type="reset"], a.button {
+  @include button;
+}
+
+.btn {
+  &--highlight, input[type="submit"], button[type="submit"] {
+    background: linear-gradient(to bottom, $bahmniPrimaryBtnColor, $bahmniPrimaryBtnColorHover) $bahmniPrimaryBtnColorHover;
+    border: 1px solid $bahmniPrimaryBtnColorHover;
+    color: $white;
+    letter-spacing: 0.5px;
+    font-family: $primarySemiBoldFont;
+    border-radius: 2px;
+  }
+  &--close {
+    padding: 5px;
+    font-size: 12px;
+    width: 74px;
+  }
+}
+
+input[type="checkbox"] {
+  background-color: $bahmniPageBg;
+  border: 1px solid $gray400;
+  @include box-shadow-for-section;
+  padding: 8px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+}
+
+.container-content-wrap {
+  @include clearfix();
+  padding-top: 106px;
+  margin-bottom: 20px;
+}
+
+.container-columns {
+  @include clearfix();
+  margin: 10px;
+}
+
+.column-side {
+  width: 255px;
+  float: left;
+  margin-right: -100%;
+  &.scrolled {
+    position: fixed;
+    top: 112px;
+  }
+
+}
+
+.container-column-main {
+  float: right;
+  width: 100%;
+}
+
+.column-main {
+  margin-left: 255px;
+  padding-left: 10px;
+}
+
+.container-main {
+  @include clearfix();
+  border: 1px solid $bahmniSecondaryColor;
+  border-radius: 5px 5px 0 0;
+  @include box-shadow-for-section;
+  &.published {
+    opacity: 0.8;
+    cursor: not-allowed;
+    .container-columns {
+      pointer-events: none;
+    }
+  }
+}
+
+.button-wrapper {
+  // remove
+  clear: both;
+  overflow: hidden;
+  margin: 0 0 10px;
+}
+
+ul li a.back-btn, a.back-btn {
+  padding: 4px 10px 5px 10px;
+  /* stylelint-disable */
+  border: 1px solid #476b6b;
+  background: linear-gradient(to bottom, $bahmniSecondaryColor, #527a7a);
+  /* stylelint-enable */
+}
+
+ul li a.back-btn i, a.back-btn i {
+  font-size: 30px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+a.back-btn {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  z-index: 1;
+  margin: 6px 6px 0 0;
+  color: $white;
+  border-left: 0;
+  float: left;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+a.back-btn:hover {
+  text-decoration: none;
+  color: $white;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.info-view-mode-wrap {
+  @include clearfix;
+  @include box-shadow-for-section;
+  border: 1px $gray400 solid;
+  padding: 10px;
+  font-size: 14px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: $gray200;
+  /* stylelint-disable */
+  color: #FFA50D;
+  /* stylelint-enable */
+  position: relative;
+}
+
+.info-view-mode {
+  display: table;
+  width: auto;
+  margin: 0 auto;
+  .fa-info-circle {
+    font-size: 28px;
+    padding: 0 5px;
+  }
+  .info-message {
+    display: table;
+    float: left;
+    padding: 5px 0;
+  }
+}
