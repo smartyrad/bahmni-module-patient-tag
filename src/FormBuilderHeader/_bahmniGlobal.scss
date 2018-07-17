@@ -12,9 +12,8 @@ a {
   text-decoration: none;
 }
 
-.header-wrap {
+.header-wraps {
   background: $bahmniSecondaryColor;
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -23,7 +22,7 @@ a {
   height: 52px;
 }
 
-.header, .breadcrumb-inner, .container-content {
+.headers, .breadcrumb-inner, .container-content {
   @include clearfix();
   max-width: $max-page-width;
   margin: 0 auto;
@@ -32,7 +31,6 @@ a {
 .section-grid {
   margin: 0 0 15px;
   font-size: 14px;
-  position: relative;
   @include box-shadow-for-section;
   border: 1px solid $bahmniSecondaryColor;
   border-radius: 5px 5px 0 0;
@@ -40,6 +38,10 @@ a {
   .section-content {
     padding: 10px 0;
   }
+}
+
+.ap{
+  line-height: 23 !important;
 }
 
 h2.header-title {
@@ -51,7 +53,7 @@ h2.header-title {
   border-radius: 3px 3px 0 0;
 }
 
-.nav {
+.navs {
   float: left;
   width: auto;
   ul {

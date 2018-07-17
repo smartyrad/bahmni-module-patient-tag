@@ -1,19 +1,14 @@
 import React from 'react';
 //import { Table,Col} from "react-bootstrap";
-import FormBuilderHeader from './FormBuilderHeader/FormBuilderHeader.jsx';
-import './FormBuilderHeader/_bahmniGlobal.scss'
-
+import './FormBuilderHeader/_bahmniGlobal.scss';
+//import {Button, Row, Col} from 'react-bootstrap';
+import Tablists from "./Tabs/Tablists";
 
 class App extends React.Component{
 
-   constructor(){
-    super();
-
-    //this.state = {patients:''};
-   }
 
   componentDidMount() {
-      fetch('http://localhost:8081/openmrs/ws/rest/v1/tag?objectType=org.openmrs.Patient&objectUuid=0fbb6349-1580-46db-be45-da5d09a89fef', {
+      /*fetch('http://localhost:8081/openmrs/ws/rest/v1/tag?objectType=org.openmrs.Patient&objectUuid=0fbb6349-1580-46db-be45-da5d09a89fef', {
           headers: new Headers({
               'Authorization': 'Basic '+btoa('admin:Admin123')
           })})
@@ -21,7 +16,7 @@ class App extends React.Component{
           .then( data => { this.setState({ patients: data});
 
 
-          });
+          });*/
       }
 
   render() {
@@ -29,14 +24,29 @@ class App extends React.Component{
 
         return(
             <div>
-                <FormBuilderHeader/>
-                <div className="container-content">
-                    <div className="container-main form-list">
-                        <h2 className="header-title">Tag List</h2>
+
+                    <div className="header-wraps">
+                        <header className="headers">
+                            <nav className="navs">
+                                <ul>
+                                    <li>
+                                        <a className="back-btn" href="https://demo-us.mybahmni.org/bahmni/home/#/dashboard">
+                                            <i className="fa fa-home"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </header>
                     </div>
-                </div>
+
+
+                    <div>
+                        <Tablists/>
+                    </div>
 
             </div>
+
+
             )
        }
 
