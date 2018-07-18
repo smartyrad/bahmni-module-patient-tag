@@ -10,10 +10,10 @@ import PanelView from "./panel";
 export default class Tablists extends React.Component {
     render() {
         return (
-            <Tabs>
+            <Tabs className="container-fluid">
                 <TabList>
-                    <Tab>List of Tags</Tab>
-                    <Tab>Manage Lists</Tab>
+                    <Tab>Tag List</Tab>
+                    <Tab>Manage Tags</Tab>
                 </TabList>
 
                 <TabPanel>

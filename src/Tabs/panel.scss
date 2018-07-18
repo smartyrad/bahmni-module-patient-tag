@@ -1,0 +1,15 @@
+
+.panel > .panel-heading {
+  background-image: none;
+  background-color:  #669898;
+  color: white;
+
+}
+
+#tb2 {
+  counter-reset: serial-number;  /* Set the serial number counter to 0 */
+}
+#tb2 td:first-child:before {
+  counter-increment: serial-number;  /* Increment the serial number counter */
+  content: counter(serial-number);  /* Display the counter */
+}

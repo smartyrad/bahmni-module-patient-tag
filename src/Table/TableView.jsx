@@ -1,7 +1,9 @@
 import React from 'react';
 import { Table,Col} from "react-bootstrap";
 import './spinner.gif';
-
+import '../Tabs/panel.scss';
+import './deletetag';
+import DeleteTag from "./deletetag";
 
 class TableView extends React.Component {
 
@@ -32,17 +34,30 @@ class TableView extends React.Component {
 
             return (
 
-                <Table>
+                <Table responsive hover id="tb2">
                     <thead>
-
+                    <tr>
+                        <th width='4%'>#</th>
+                        <th>Tag Name</th>
+                        <th width='3%'>Edit</th>
+                        <th width='3%'>Delete</th>
+                    </tr>
                     </thead>
-                    <body>
+                    <tbody>
                     {pat.results.map((item, index) =>
-                        <div key={index}>
                             <tr key={index}>
-                                <Col lg={6} md={8}>{item.display}</Col>
+                                <td><Col/></td>
+                                <td><div><b>{item.display}</b></div></td>
+                                    <td><div className="btn-group pull-right">
+                                        <DeleteTag className="btn btn-default btn-sm">
+                                            <i className="fa fa-2x fa-trash"></i>
+                                        </DeleteTag></div></td>
+                                    <td><div className="btn-group pull-right">
+                                    <a href="#" className="btn btn-default btn-sm">
+                                        <i className="fa fa-2x fa-edit"></i>
+                                    </a></div></td>
                             </tr>
-                        </div>)}</body>
+                        )}</tbody>
                 </Table>
             )
         }
