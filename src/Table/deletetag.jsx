@@ -4,27 +4,53 @@ import {Modal, Button} from 'react-bootstrap';
 
 
 
-
-
 class DeleteTag extends React.Component {
+    constructor(props, context) {
+        super(props, context);
+
+        this.handleShow = this.handleShow.bind(this);
+        this.handleClose = this.handleClose.bind(this);
+
+        this.state = {
+            show: false
+        };
+    }
+
+    handleClose() {
+        this.setState({ show: false });
+    }
+
+    handleShow() {
+        this.setState({ show: true });
+    }
+
     render() {
         return (
-            <div className="static-modal">
-                <Modal.Dialog>
-                    <Modal.Header>
+            <div>
+
+                <Button bsSize="small" onClick={this.handleShow}>
+                    <div onClick={() => this.setState({ show: true })} className="btn-group pull-right">
+                        <a href="" className="btn btn-default btn-sm">
+                            <i className="fa fa-2x fa-trash"></i>
+                        </a></div>
+                </Button>
+
+                <Modal show={this.state.show} onHide={this.handleClose}>
+                    <Modal.Header closeButton>
                         <Modal.Title>Retire Tag</Modal.Title>
                     </Modal.Header>
-
-                    <Modal.Body><h2>Are you sure you want to retire this item?</h2></Modal.Body>
-
+                    <Modal.Body>
+                        <h4>Are you sure you want to delete this item?</h4>
+                    </Modal.Body>
                     <Modal.Footer>
-                        <Button>Cancel</Button>
-                        <Button bsStyle="primary">Delete item</Button>
-                    </Modal.Footer>
-                </Modal.Dialog>
-            </div>
+                        <Button bsStyle="primary" onClick={this.handleClose}>Delete tag</Button>
+                        <Button onClick={this.handleClose}>Close</Button>
 
-        ) }
+                    </Modal.Footer>
+                </Modal>
+            </div>
+        );
+    }
 }
 
 export default DeleteTag;

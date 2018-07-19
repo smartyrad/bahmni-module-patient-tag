@@ -48,10 +48,7 @@ class TableView extends React.Component {
                             <tr key={index}>
                                 <td><Col/></td>
                                 <td><div><b>{item.display}</b></div></td>
-                                    <td><div className="btn-group pull-right">
-                                        <DeleteTag className="btn btn-default btn-sm">
-                                            <i className="fa fa-2x fa-trash"></i>
-                                        </DeleteTag></div></td>
+                                    <td><DeleteTag></DeleteTag></td>
                                     <td><div className="btn-group pull-right">
                                     <a href="#" className="btn btn-default btn-sm">
                                         <i className="fa fa-2x fa-edit"></i>
