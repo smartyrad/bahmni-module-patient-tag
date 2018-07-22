@@ -28,11 +28,8 @@ class DeleteTag extends React.Component {
         return (
             <div>
 
-                <Button bsSize="small" onClick={this.handleShow}>
-                    <div onClick={() => this.setState({ show: true })} className="btn-group pull-right">
-                        <a href="" className="btn btn-default btn-sm">
-                            <i className="fa fa-2x fa-trash"></i>
-                        </a></div>
+                <Button bsSize="small" className="btn btn-default btn-sm btn-group pull-right" onClick={this.handleShow}>
+                        <i className="fa fa-2x fa-trash"></i>
                 </Button>
 
                 <Modal show={this.state.show} onHide={this.handleClose}>
