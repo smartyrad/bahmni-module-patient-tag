@@ -2,8 +2,8 @@ import React from 'react';
 import { Panel, PanelGroup} from "react-bootstrap";
 import "./panel.scss";
 import "./user-plus-solid.svg";
-import FetchTag from "./fetchtag";
-import FetchPatient from "./fetchpatientfromurl";
+import Listofpatients from "./listofpatients";
+
 
 class PatientTagPanel extends React.Component {
   constructor(props, context) {
@@ -21,6 +21,7 @@ class PatientTagPanel extends React.Component {
   }
 
   render() {
+    const activated = this.state.activeKey;
     return (
       <PanelGroup
         accordion
@@ -34,9 +35,10 @@ class PatientTagPanel extends React.Component {
                   <a href="#" className="btn btn-default btn-sm">
                       <i className="fa fa-user-plus"></i>
                   </a></div>
-            <Panel.Title toggle><FetchTag/></Panel.Title>
+            <Panel.Title toggle>WatchThis</Panel.Title>
           </Panel.Heading>
-          <Panel.Body collapsible><FetchPatient/></Panel.Body>
+          <Panel.Body collapsible>{activated ?  activated.toString() ===  '1' ? <Listofpatients/> : 'Not yet Loaded' : ''}
+          </Panel.Body>
         </Panel>
       </PanelGroup>
     );
