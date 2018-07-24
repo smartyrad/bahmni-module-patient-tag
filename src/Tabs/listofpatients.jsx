@@ -1,15 +1,17 @@
 import React from 'react';
-//import { Table,Col} from "react-bootstrap";
+import { Table,Col} from "react-bootstrap";
 import './spinner.gif';
 import '../Tabs/panel.scss';
-
+import DeleteTag from "../Table/deletetag";
 
 export default class Listofpatients extends React.Component {
 
     constructor() {
         super();
-
-        this.state = {patients: ''};
+        this.lin = "";
+        this.state = {patients: '', patientlisturls: '', patient : ''};
+        this.listofurls = this.listofurls.bind(this);
+        this.patienturllist = this.patienturllist.bind(this);
     }
 
     listofurls() {
@@ -20,46 +22,62 @@ export default class Listofpatients extends React.Component {
             })
             .then(response => response.json())
             .then(data => {
-                this.setState({patients: data});
-            });
+                //console.log(data);
+                this.lin = data.links.filter(function (links) {
 
-            if (this.state && this.state.patients) {
-                const pat = this.state.patients;
-            const extracted = pat.links.map((links) => {
-                    if (links.rel === "v1/patient") {
-                        return (links.uri)
+                        return links.rel === "v1/patient"
                     }
+
+                );
+
+                this.setState({patients: this.lin},function () {
+                    //console.log(this.state.patients);
+                    let a = this.state.patients;
+                    a.map((item) => {
+                        fetch(item.uri, {
+                            headers: new Headers({
+                                'Authorization': 'Basic ' + btoa('admin:Admin123')
+                            })
+                        })
+                            .then(response => response.json())
+                            .then(data => {
+                                console.log(data);
+                                // Drops mic.
+                                // this.setState({patientlisturls: data});
+
+
+                            });
+                        return
+                    })
                 });
-                console.log(extracted);
-            }
+            });
+         console.log("Goinjjjg jhbhj patjjient!");
+
+
     }
-    individualpatienturlfetch(){
-        let a = this.listofurls();
-        {a.map((item) => {
-            fetch(item, {
-                headers: new Headers({
-                    'Authorization': 'Basic ' + btoa('admin:Admin123')
-                })
-            })
-                .then(response => response.json())
-                .then(data => {
-                    this.setState({patientlisturls: data});
 
+    patienturllist(){
+        console.log("Entered!");
+        console.log(this.state.patients);
 
-                });
-        })}}
+        //this.setState({patient: this.state.extracted});
+        //const patienturls = this.state.patient;
+
+    }
+
 
         componentDidMount(){
-            this.listofurls();
-        }
+        this.listofurls();
+            //console.log("Mounted")
+            //this.state.patienturllist;
+            //console.log(this.state.patienturllist);
+            }
 
         render()
             {
-                console.log(this.listofurls())
-            return (
-
-                    <div>hello</div>
-                )
+                return(<p>jhfhjf</p>);
             }
 
-        }
+}
+
+
