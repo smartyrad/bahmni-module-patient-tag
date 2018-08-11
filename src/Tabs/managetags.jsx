@@ -28,46 +28,45 @@ class PatientTagPanel extends React.Component {
         })
             .then(response => response.json())
             .then(data => {
-                this.setState({patientlisturls: data},function () {
-                    //console.log(this.state.patientlisturls);
-                    let a = this.state.patientlisturls.results;
-                    //console.log(a);
-                    a.map((item) => {
-                        this.state.data = item.display;
-                        //console.log(this.state.data);
-                        this.state.joined = this.state.myArray.concat(this.state.data);
-                        this.setState({ myArray: this.state.joined}, function () {
-                            //console.log(this.state.myArray);
-                        })
-
-                    });
-                });
+                this.setState({patientlisturls: data});
             })
 
     }
 
   render() {
-    const activated = this.state.activeKey;
-      return (
-      <PanelGroup
-        accordion
-        id="accordion-controlled-example"
-        activeKey={this.state.activeKey}
-        onSelect={this.handleSelect}
-      >
-        <Panel eventKey="1">
-          <Panel.Heading>
-              <div className="btn-group pull-right">
-                  <a href="#" className="btn btn-default btn-sm">
-                      <i className="fa fa-user-plus"></i>
-                  </a></div>
-              <Panel.Title toggle>Hello</Panel.Title>
-          </Panel.Heading>
-          <Panel.Body collapsible>{activated ?  activated.toString() ===  '1' ? <Listofpatients/> : 'Not yet Loaded' : ''}
-          </Panel.Body>
-        </Panel>
-      </PanelGroup>
-    );
+      if (this.state && this.state.patientlisturls) {
+          const activated = this.state.activeKey;
+          const a = this.state.patientlisturls;
+          console.log(a);
+          //const listoftags =
+          const listoftags = a.results.map((item) => item.display);
+          //console.log(listoftags);
+          return (
+              <PanelGroup
+                  accordion
+                  id="accordion-controlled-example"
+                  activeKey={this.state.activeKey}
+                  onSelect={this.handleSelect}
+              >
+                  {listoftags.map((name , i) =>
+                      <Panel eventKey="1">
+                          <Panel.Heading>
+                              <div className="btn-group pull-right">
+                                  <a href="#" className="btn btn-default btn-sm">
+                                      <i className="fa fa-user-plus"></i>
+                                  </a></div>
+                              <Panel.Title toggle>{name} </Panel.Title>
+                          </Panel.Heading>
+                          <Panel.Body collapsible>{activated ? activated.toString() === '1' ? <Listofpatients/> : 'Not yet Loaded' : ''}
+                          </Panel.Body>
+                      </Panel>
+                  )}
+              </PanelGroup>
+          );
+      }
+      else {
+          return <p>Loading...</p>
+      }
   }
 }
 
