@@ -12,8 +12,8 @@ export default class Tablists extends React.Component {
         return (
             <Tabs className="container-fluid">
                 <TabList>
-                    <Tab>Manage Tags</Tab>
                     <Tab>Tag List</Tab>
+                    <Tab>Manage Tags</Tab>
                 </TabList>
 
                 <TabPanel>
