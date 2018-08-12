@@ -6,8 +6,8 @@ import DeletePatient from "./deletepatient";
 
 export default class Listofpatients extends React.Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.lin = "";
         this.joined = "";
         this.state = {patients: '', patientlisturls: '', myArray : []};
@@ -15,8 +15,8 @@ export default class Listofpatients extends React.Component {
         this.listofurls = this.listofurls.bind(this);
     }
 
-    listofurls() {
-        fetch('http://localhost:8081/openmrs/ws/rest/v1/tag/watchthis', {
+    listofurls(tagname) {
+        fetch('http://localhost:8081/openmrs/ws/rest/v1/tag/'+ tagname, {
             headers: new Headers({
                 'Authorization': 'Basic ' + btoa('admin:Admin123')
             })
@@ -56,8 +56,12 @@ export default class Listofpatients extends React.Component {
 
 
     componentDidMount(){
-        this.listofurls();
-        console.log(this.state.myArray);
+        //console.log(this.props.tagname);
+        if(this.props.tagname){
+            this.listofurls(this.props.tagname.toString());
+        }
+        //this.listofurls(this.prop.tagname);
+        //console.log(this.state.myArray);
     }
 
     render() {

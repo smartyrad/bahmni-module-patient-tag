@@ -37,7 +37,7 @@ class PatientTagPanel extends React.Component {
       if (this.state && this.state.patientlisturls) {
           const activated = this.state.activeKey;
           const a = this.state.patientlisturls;
-          console.log(a);
+          //console.log(a);
           //const listoftags =
           const listoftags = a.results.map((item) => item.display);
           //console.log(listoftags);
@@ -49,7 +49,7 @@ class PatientTagPanel extends React.Component {
                   onSelect={this.handleSelect}
               >
                   {listoftags.map((name , i) =>
-                      <Panel eventKey="1">
+                      <Panel eventKey={name} key={i}>
                           <Panel.Heading>
                               <div className="btn-group pull-right">
                                   <a href="#" className="btn btn-default btn-sm">
@@ -57,7 +57,7 @@ class PatientTagPanel extends React.Component {
                                   </a></div>
                               <Panel.Title toggle>{name} </Panel.Title>
                           </Panel.Heading>
-                          <Panel.Body collapsible>{activated ? activated.toString() === '1' ? <Listofpatients/> : 'Not yet Loaded' : ''}
+                          <Panel.Body collapsible>{activated ? activated.toString() === name.toString() ? <Listofpatients tagname={name}/> : 'Not yet Loaded' : ''}
                           </Panel.Body>
                       </Panel>
                   )}

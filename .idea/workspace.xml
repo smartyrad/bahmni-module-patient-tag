@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8245003-308e-4d1d-af56-dfff31d3cc0e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tabs/listofpatients.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tabs/listofpatients.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tabs/managetags.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tabs/managetags.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +32,7 @@
       <file leaf-file-name="panel.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tabs/panel.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
+            <state relative-caret-position="510">
               <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -42,7 +44,7 @@
       <file leaf-file-name="Tablists.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tabs/Tablists.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="315">
               <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
@@ -63,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="managetags.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="managetags.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tabs/managetags.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="747">
-              <caret line="63" column="27" lean-forward="true" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+            <state relative-caret-position="255">
+              <caret line="60" column="39" lean-forward="true" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -75,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listofpatients.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="listofpatients.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Tabs/listofpatients.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            <state relative-caret-position="225">
+              <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -90,7 +92,7 @@
       <file leaf-file-name="TableView.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Table/TableView.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
+            <state relative-caret-position="375">
               <caret line="30" column="15" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="15" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -170,14 +172,14 @@
         <option value="$PROJECT_DIR$/src/Tabs/fetchpatientfromurl.jsx" />
         <option value="$PROJECT_DIR$/src/Tabs/panel.jsx" />
         <option value="$PROJECT_DIR$/src/Table/deletetag.jsx" />
-        <option value="$PROJECT_DIR$/src/Tabs/deletepatient.jsx" />
         <option value="$PROJECT_DIR$/src/Table/TableView.jsx" />
         <option value="$PROJECT_DIR$/src/Tabs/Tablists.jsx" />
         <option value="$PROJECT_DIR$/src/Tabs/TableView.java" />
         <option value="$PROJECT_DIR$/src/Tabs/fetchuniquetagsintopanels.jsx" />
-        <option value="$PROJECT_DIR$/src/Tabs/listofpatients.jsx" />
         <option value="$PROJECT_DIR$/src/Tabs/listuniquetags.jsx" />
+        <option value="$PROJECT_DIR$/src/Tabs/deletepatient.jsx" />
         <option value="$PROJECT_DIR$/src/Tabs/managetags.jsx" />
+        <option value="$PROJECT_DIR$/src/Tabs/listofpatients.jsx" />
       </list>
     </option>
   </component>
@@ -201,8 +203,9 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="115" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="422" />
+    <option name="y" value="99" />
     <option name="width" value="663" />
     <option name="height" value="562" />
   </component>
@@ -345,14 +348,15 @@
       <workItem from="1533974915821" duration="2645000" />
       <workItem from="1533984129285" duration="6360000" />
       <workItem from="1534013819126" duration="3942000" />
+      <workItem from="1534066315969" duration="5172000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214537000" />
+    <option name="totallyTimeSpent" value="219709000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
+    <frame x="422" y="99" width="663" height="562" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
@@ -363,8 +367,8 @@
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.02276176" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.32885906" />
       <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32885906" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.27348992" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
@@ -374,8 +378,8 @@
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
@@ -389,25 +393,25 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.32885906" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="4" />
       <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.23065251" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
-      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.27348992" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
-      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="right" id="Database" order="4" weight="0.0" />
       <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.02276176" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -528,13 +532,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tabs/fetchtag.jsx" />
     <entry file="file://$PROJECT_DIR$/src/Tabs/fetchpatientfromurl.jsx" />
-    <entry file="file://$PROJECT_DIR$/../a.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../a.jsx" />
     <entry file="file://$PROJECT_DIR$/src/Table/spinner.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -555,19 +553,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tabs/fetchuniquetagsintopanels.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/Tabs/TableView.java" />
+    <entry file="file://$PROJECT_DIR$/src/Tabs/listuniquetags.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/Tabs/Tablists.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tabs/panel.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Table/TableView.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="30" column="15" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tabs/deletepatient.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
           <folding>
             <element signature="e#1#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tabs/fetchuniquetagsintopanels.jsx" />
-    <entry file="file://$PROJECT_DIR$/src/Tabs/TableView.java" />
-    <entry file="file://$PROJECT_DIR$/src/Tabs/listuniquetags.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/Tabs/managetags.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="60" column="39" lean-forward="true" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Table/deletetag.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -578,50 +616,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tabs/Tablists.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tabs/panel.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Table/TableView.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="30" column="15" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tabs/listofpatients.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tabs/managetags.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="63" column="27" lean-forward="true" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+        <state relative-caret-position="225">
+          <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
